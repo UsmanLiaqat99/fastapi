@@ -86,3 +86,5 @@ def update(id, request: schemas.Blog, db: Session = Depends(get_db)):
     blog.update(request.dict())
     db.commit()
     return {"message": "Data Updated Successfully"}
+
+    
